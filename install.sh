@@ -2,71 +2,51 @@
 
 clear
 
-# 🎬 ASCII ART TITLU
-echo -e "\e[1;35m"
+# TÍTULO ASCII
+echo -e "\e[1;34m"
 echo " __        __   _                            ____                  _       _     _     "
 echo " \ \      / /__| | ___ ___  _ __ ___   ___  |  _ \ __ _ _ __   ___| |__   (_)___| |_   "
 echo "  \ \ /\ / / _ \ |/ __/ _ \| '_ \` _ \ / _ \ | |_) / _\` | '_ \ / __| '_ \  | / __| __|  "
 echo "   \ V  V /  __/ | (_| (_) | | | | | |  __/ |  __/ (_| | | | | (__| | | | | \__ \ |_   "
 echo "    \_/\_/ \___|_|\___\___/|_| |_| |_|\___| |_|   \__,_|_| |_|\___|_| |_| |_|___/\__|  "
-echo "                                                                                      "
-echo -e "\e[1;36m      🔥 INSTALATORUL OFICIAL BY GYOVANNY BOSS 🔥❤️"
+echo -e "\e[0m"
 echo -e "\e[1;32m====================================================================================="
-sleep 2
+echo -e "Instalador oficial iniciado por Gyovanny Srg"
+echo -e "=====================================================================================\e[0m"
+sleep 1
 
-# 🎙️ INTRO VOCAL SIMULAT
-echo -e "\e[1;33m🗣️ „Yo! Sunt Gyovanny Boss și ce urmează... rupe WhatsApp-ul în două!” 💥📲"
-sleep 2
-echo -e "⚠️ Atenție: terminalul tău s-ar putea să nu facă față la această putere 😎"
-sleep 2
+# INTRODUCCIÓN
+echo -e "\e[1;33mPreparando entorno de desarrollo. Esto puede tardar unos minutos...\e[0m"
+sleep 1
 
-# 💥 ANIMAȚIE DE ÎNCĂRCARE
-echo -ne "🔧 Se pregătesc pachetele ultra-turbo"
-for i in {1..6}; do
-    echo -ne "."
-    sleep 0.4
-done
-echo -e "\n"
-
-# 🔄 UPDATE & UPGRADE
+# ACTUALIZACIÓN DEL SISTEMA
+echo -e "\n\e[1;36mActualizando paquetes del sistema...\e[0m"
 pkg update -y && pkg upgrade -y
 clear
 
-# 📦 INSTALL PACKAGE
-echo -e "📦 Instalăm Node.js, Git și alte unelte Boss-style 💪..."
+# INSTALACIÓN DE DEPENDENCIAS
+echo -e "\e[1;36mInstalando Node.js, Git y herramientas necesarias...\e[0m"
 pkg install nodejs git jq -y
 clear
 
-# 🧙 INSTALL DEPENDENCIES
-echo -e "🎯 Trag modulele magice de pe internet direct în script 🧙‍♂️..."
-npm install @borutowaileys/library qrcode-terminal pino chalk node-fetch
+# INSTALACIÓN DE MÓDULOS NPM
+echo -e "\e[1;36mInstalando dependencias del proyecto...\e[0m"
+npm install @whiskeysockets/baileys pino chalk node-fetch
 npm install
 clear
 
-# 💥 FINAL EXPLOZIV
-echo -e "\e[1;31m💥 RUPEM WHATSAPP-UL ÎN DOUĂ 💥 - powered by Gyovanny Boss 🔥"
+# CONFIRMACIÓN FINAL
+echo -e "\n\e[1;32m✅ WhiskeySockets/Baileys instalado con éxito por Gyovanny Srg\e[0m"
 sleep 1
 
-# 🧨 EXPLOZIE CU CARACTERE RANDOM
-for i in {1..25}; do
-    chars=("🔥" "💣" "💥" "😎" "👊" "🎉" "🚀" "✨")
-    line=""
-    for j in {1..30}; do
-        line+="${chars[$RANDOM % ${#chars[@]}]}"
-    done
-    echo -e "\e[1;33m$line"
-    sleep 0.05
-done
-
-# 🟢 MATRIX EFFECT STYLE
-echo -e "\n\e[1;32mActivăm modul MATRIX by Gyovanny Boss..."
-sleep 1
-for i in {1..15}; do
+# EFECTO MATRIX (OPCIONAL)
+echo -e "\n\e[1;32mActivando modo consola...\e[0m"
+for i in {1..10}; do
     echo -e "\e[1;32m$(tr -dc '01' </dev/urandom | head -c 60)"
     sleep 0.1
 done
 
-# 🎬 LANSARE SCRIPT SUPREM
-echo -e "\n\e[1;36m🎬 Gata cu pregătirea... lansăm WHATSAPP SCRIPT-ul suprem! 💣💻"
-sleep 2
+# EJECUCIÓN DEL SCRIPT PRINCIPAL
+echo -e "\n\e[1;36mLanzando script principal...\e[0m"
+sleep 1
 npm start
