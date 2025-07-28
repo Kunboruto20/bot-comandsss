@@ -31,7 +31,7 @@ clear
 
 # INSTALACIÓN DE MÓDULOS NPM
 echo -e "\e[1;36mInstalando dependencias del proyecto...\e[0m"
-npm install @whiskeysockets/baileys pino chalk node-fetch
+npm install @whiskeysockets/baileys qrcode-terminal pino chalk node-fetch
 npm install
 clear
 
