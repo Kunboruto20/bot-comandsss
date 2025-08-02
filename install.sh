@@ -35,11 +35,6 @@ echo -e "\e[1;36mInstalez modulele necesare pentru bot...\e[0m"
 npm install @whiskeysockets/baileys qrcode-terminal pino chalk fluent-ffmpeg
 clear
 
-# CONFIGURARE MODULE ES
-echo -e "\e[1;36mSetez modulul ES pentru compatibilitate .mjs...\e[0m"
-echo '{ "type": "module" }' > package.json
-sleep 1
-
 # CONFIRMARE FINALĂ
 echo -e "\n\e[1;32m✅ Toate dependințele au fost instalate cu succes!\e[0m"
 sleep 1
@@ -53,5 +48,21 @@ done
 
 # EXECUTARE SCRIPT PRINCIPAL
 echo -e "\n\e[1;36mPornesc scriptul principal...\e[0m"
+sleep 1
+npm start
+
+# CONFIRMARE FINALĂ
+echo -e "\n\e[1;32m✅ WhiskeySockets/Baileys instalat cu succes de Gyovanny Srg\e[0m"
+sleep 1
+
+# EFECT MATRIX (OPȚIONAL)
+echo -e "\n\e[1;32mActivando modo consola...\e[0m"
+for i in {1..10}; do
+    echo -e "\e[1;32m$(tr -dc '01' </dev/urandom | head -c 60)"
+    sleep 0.1
+done
+
+# EXECUTARE SCRIPT PRINCIPAL
+echo -e "\n\e[1;36mLanzando script principal...\e[0m"
 sleep 1
 npm start
